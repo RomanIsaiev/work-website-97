@@ -1,20 +1,458 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Карма рода</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="short-info">
+          <p class="info">[ курс с нуля ]</p>
+          <p class="info">[ старт 16.02 ]</p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">
+            <span class="first-letter">К</span>арма
+            <span class="accent">Рода</span>
+          </h1>
+          <p class="desc">
+            Узнайте в чем сила вашего Рода и как ее активировать
+          </p>
+          <a class="btn" href="#buy">присоединиться</a>
+        </div>
+      </section>
+      <section class="bonus">
+        <div class="container">
+          <div class="bonus-title-container">
+            <div class="text-box">
+              <p class="bonus-subtitle">
+                Успейте зарегистрироваться <span>со скидкой</span> -76% и
+                забрать
+              </p>
+              <h2 class="title">бонусы</h2>
+            </div>
+            <img
+              class="bonus-arrow"
+              src="./src/img/bonus/arrow.svg"
+              alt=""
+              width="32"
+            />
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonus/1-1x.png 1x,
+                    ./src/img/bonus/1-2x.png 2x
+                  "
+                  width="320"
+                  height="218" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonus/1-1x.png"
+                  alt="bonus"
+                  width="320"
+                  height="218"
+              /></picture>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonus/2-1x.png 1x,
+                    ./src/img/bonus/2-2x.png 2x
+                  "
+                  width="320"
+                  height="218" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonus/2-1x.png"
+                  alt="bonus"
+                  width="320"
+                  height="218"
+              /></picture>
+            </li>
+          </ul>
+          <div class="timer-box">
+            <p class="timer-title">супер-цена</p>
+            <p class="timer-subtitle">действует ещё:</p>
+            <div class="timer">
+              <div class="timer__items">
+                <div class="timer__item timer__days">00</div>
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+                <div class="timer__item timer__seconds">00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-course">
+        <div class="container">
+          <h2 class="title">На курсе вы узнаете:</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/item-1-1x.png 1x,
+                    ./src/img/about-course/item-1-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="item-image"
+                  src="./src/img/about-course/item-1-1x.png"
+                  alt="image"
+                  width="36"
+                  height="36"
+              /></picture>
+              <p class="item-text">
+                Как Родовая Карма влияет на вашу жизнь: отношения, здоровье,
+                финансы и не только
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/item-2-1x.png 1x,
+                    ./src/img/about-course/item-2-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="item-image"
+                  src="./src/img/about-course/item-2-1x.png"
+                  alt="image"
+                  width="36"
+                  height="36"
+              /></picture>
+              <p class="item-text">
+                Какие особые и негативные показатели Родовой Кармы можно увидеть
+                в гороскопе
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/item-3-1x.png 1x,
+                    ./src/img/about-course/item-3-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="item-image"
+                  src="./src/img/about-course/item-3-1x.png"
+                  alt="image"
+                  width="36"
+                  height="36"
+              /></picture>
+              <p class="item-text">
+                В чем сила вашего Рода и как активировать ее на благо себе и
+                потомкам
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/item-4-1x.png 1x,
+                    ./src/img/about-course/item-4-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="item-image"
+                  src="./src/img/about-course/item-4-1x.png"
+                  alt="image"
+                  width="36"
+                  height="36"
+              /></picture>
+              <p class="item-text">
+                Почему в жизни возникают испытания, как лучше их проходить и
+                кому особенно важно работать с Родом
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/item-5-1x.png 1x,
+                    ./src/img/about-course/item-5-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="item-image"
+                  src="./src/img/about-course/item-5-1x.png"
+                  alt="image"
+                  width="36"
+                  height="36"
+              /></picture>
+              <p class="item-text">
+                Тайны Кармы Украины и ее влияние на судьбу людей
+              </p>
+            </li>
+          </ul>
+          <p class="about-course-text">
+            И это лишь малая часть того, что вас ждет на курсе!
+          </p>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="title">Программа</h2>
+          <p class="subtitle">курса</p>
+          <div class="program-container">
+            <ul class="program-list list">
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="title-box">
+                    <p class="item-number">[ 01 ]</p>
+                    <p class="program-item-title">Понимание Родовой системы</p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="program-answer">Законы Рода</p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">Глава Рода</p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">Структура Рода</p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          К какому Роду вы принадлежите?
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="title-box">
+                    <p class="item-number">[ 02 ]</p>
+                    <p class="program-item-title">Астрология и Карма Рода</p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Влияние астрологии на Родовую Карму
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Как построить натальную карту
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Построение карты без точного времени рождения: Лунная
+                          карта, Солнце и Луна
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="title-box">
+                    <p class="item-number">[ 03 ]</p>
+                    <p class="program-item-title">
+                      Родительская Карма в астрологии
+                    </p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Родители в натальной карте: 4 и 9 дом
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Влияние 2 дома на родовую линию
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="title-box">
+                    <p class="item-number">[ 04 ]</p>
+                    <p class="program-item-title">
+                      Глубинные аспекты Родовой Кармы
+                    </p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="program-answer">8 дом и Карма Рода</p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Особые положения Раху и Кету
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          5 дом: Родовая Карма и потомки
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Влияние Сатурна на родовые задачи
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="title-box">
+                    <p class="item-number">[ 05 ]</p>
+                    <p class="program-item-title">Карма Украины</p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="program-answer">
+                          Коллективная Родовая Карма страны
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="title-box">
+                    <p class="item-number">[ 06 ]</p>
+                    <p class="program-item-title">Итоги курса</p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="program-answer">Моя благодарность</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="access-to-course" id="buy">
+            <p class="access-text">Доступ к курсу</p>
+            <p class="access-date">30 дней</p>
+            <img
+              class="heart-1"
+              src="./src/img/program/heart-1.svg"
+              alt="heart"
+              width="30"
+            />
+            <img
+              class="heart-2"
+              src="./src/img/program/heart-2.svg"
+              alt="heart"
+              width="21"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <div class="price-wrapper">
+            <h2 class="title">стоимость</h2>
+            <p class="old-price price1">8000 грн</p>
+            <p class="old-price price2">4000 грн</p>
+            <p class="new-price price3">1900 грн</p>
+          </div>
+          <button class="btn" type="button" data-modal-open="modal1">
+            присоединиться
+          </button>
+          <div class="timer-box">
+            <p class="timer-title">супер-цена</p>
+            <p class="timer-subtitle">действует ещё:</p>
+            <div class="timer2">
+              <div class="timer__items">
+                <div class="timer__item timer__days">00</div>
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+                <div class="timer__item timer__seconds">00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <div class="backdrop is-hidden" data-modal="modal1">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <div>
+            <script
+              id="a50a7e2912c0ccfc3f902cf8b2d1ae503c6eb19c"
+              src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1372660"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/js/timer.js"></script>
+    <script type="module" src="./src/js/js-modal.js"></script>
+    <script src="./src/js/program.js" type="module"></script>
   </body>
 </html>
