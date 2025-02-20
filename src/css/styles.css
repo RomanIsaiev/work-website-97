@@ -78,6 +78,14 @@
   margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero/bg-2x.jpg);
+  }
+}
+
 .hero .title {
   display: flex;
   align-items: start;
@@ -326,6 +334,14 @@
 
   max-width: 430px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-course {
+    background-image: url(../img/about-course/bg-2x.jpg);
+  }
 }
 
 .about-course .container {
