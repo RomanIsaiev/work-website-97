@@ -72,7 +72,7 @@ function initializeClock(timerSelector, endtime) {
 
 // Указываем дату завершения
 // Конечная дата (2024 года января 10  , 20:00:00)
-const deadline = new Date(2025, 1, 23, 10, 0, 0).getTime();
+const deadline = new Date(2025, 1, 26, 10, 0, 0).getTime();
 
 // Инициализируем таймер
 initializeClock('.timer', deadline);
