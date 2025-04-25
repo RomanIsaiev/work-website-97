@@ -264,6 +264,10 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  padding: 12px;
+  border-radius: 15.075px;
+  background: #e5ebff;
 }
 
 .countdown-number {
@@ -274,16 +278,14 @@
 
 .countdown-time {
   display: block;
-  color: #3a77f2;
+  color: #090909;
   text-align: center;
-  leading-trim: both;
-  text-edge: cap;
   font-family: 'Helvetica Neue';
-  font-size: 40px;
+  font-size: 28.14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 41.4px */
-  letter-spacing: -0.92px;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: -0.563px;
   width: 50px;
 }
 
@@ -292,20 +294,19 @@
   display: flex;
   height: 30px;
   width: 1px;
-  background: #3a77f2;
+  background: #090909;
   margin: 0 auto;
 }
 
 .countdown-label {
-  color: #3a77f2;
+  color: #090909;
   text-align: center;
-
   font-family: 'Helvetica Neue';
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 41.4px */
-  letter-spacing: 0;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: -0.563px;
 
   margin-top: -1px;
 }
