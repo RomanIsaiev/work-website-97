@@ -258,68 +258,60 @@
 
 /* timer */
 
-.timer {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
-  margin-bottom: 42px;
-
-  border-radius: 15.075px;
-  background: #e6f2ff;
-
-  padding: 16px;
-}
-
-.timer__items {
+.countdown {
   display: flex;
-  justify-content: center;
-}
-.timer__item {
-  position: relative;
-
-  color: #090909;
   text-align: center;
-  font-family: 'Helvetica Neue';
-  font-size: 28.14px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-  letter-spacing: -0.563px;
-
-  min-width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
-.timer__item:first-child {
-  margin-left: 0;
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.timer__item:last-child {
-  margin-right: 0;
-}
-
-.timer__item::before {
-  content: attr(data-title);
+.countdown-time {
   display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  font-size: 13px;
+  color: #3a77f2;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'Helvetica Neue';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 41.4px */
+  letter-spacing: -0.92px;
+  width: 50px;
 }
-.timer__item:not(:last-child)::after {
+
+.countdown-doubledot {
   content: '';
-
+  display: flex;
+  height: 30px;
   width: 1px;
-  height: 25px;
-  background: #000;
+  background: #3a77f2;
+  margin: 0 auto;
+}
 
-  position: absolute;
-  top: 4px;
-  right: -11px;
+.countdown-label {
+  color: #3a77f2;
+  text-align: center;
+
+  font-family: 'Helvetica Neue';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 41.4px */
+  letter-spacing: 0;
+
+  margin-top: -1px;
+}
+
+.countdown-doubledot {
+  content: ':';
 }
 
 /* about-course */
