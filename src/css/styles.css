@@ -596,9 +596,34 @@
 }
 
 .price .price-wrapper {
+  position: relative;
   padding: 48px 20px 60px;
   border-radius: 20px;
   background: rgba(60, 155, 255, 0.25);
+}
+
+.before-price {
+  position: absolute;
+  left: 0;
+  /* top: 150px; */
+  top: 0;
+  background-color: rgb(243, 70, 70);
+  width: 100%;
+
+  padding: 8px;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%; /* 43.2px */
+  letter-spacing: 0px;
+  text-transform: uppercase;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .price .title {

@@ -69,6 +69,6 @@ function initializeLoopedClock(id, baseTime) {
 }
 
 // Установите начальную точку отсчета
-const baseStartDate = new Date('April 25, 2025 21:00:00').getTime(); // дата начала циклов
+const baseStartDate = new Date('April 26, 2025 15:00:00').getTime(); // дата начала циклов
 initializeLoopedClock('countdown-one', baseStartDate);
 initializeLoopedClock('countdown-two', baseStartDate);
