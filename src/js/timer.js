@@ -39,7 +39,7 @@ function initializeLoopedClock(id, baseTime) {
   const minutesLabel = clock.querySelector('.minutes-label');
   const secondsLabel = clock.querySelector('.seconds-label');
 
-  const loopDurationMs = 2 * 24 * 60 * 60 * 1000; // 3 дня в миллисекундах
+  const loopDurationMs = 1 * 24 * 60 * 60 * 1000; // 3 дня в миллисекундах
   // const loopDurationMs = 20 * 1000; // 3 дня в миллисекундах
 
   function updateClock() {
